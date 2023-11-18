@@ -10,6 +10,7 @@
       Title="AuthorizationPage">
 
     <Grid>
+        <!--Разметка страницы-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -31,17 +32,15 @@
                 CornerRadius="20"
                 Opacity="0.5">
         </Border>
+        <!--Фон блока авторизации-->
         <TextBlock Grid.Row="1" Grid.Column="1"
                  FontSize="34" Foreground="#F5F5F5"
                  VerticalAlignment="Center"
                  Padding="12 0 0 0" FontWeight="Bold" Margin="10 0 10 0">
             Authorization
         </TextBlock>
+        <!--Поле логина-->
         <Border Grid.Row="2" Grid.Column="1"
-                Background="#C0D6C0"
-                CornerRadius="11.5" Margin="10 0 10 0"
-                Height="30"/>
-        <Border Grid.Row="3" Grid.Column="1"
                 Background="#C0D6C0"
                 CornerRadius="11.5" Margin="10 0 10 0"
                 Height="30"/>
@@ -55,6 +54,11 @@
                Grid.Row="2" Grid.Column="1"
                HorizontalAlignment="Left" VerticalAlignment="Center"
                Margin="18 0 0 0"/>
+        <!--Поле пароля-->
+        <Border Grid.Row="3" Grid.Column="1"
+                Background="#C0D6C0"
+                CornerRadius="11.5" Margin="10 0 10 0"
+                Height="30"/>
         <TextBox Grid.Row="3"
                  Height="30"
                  BorderThickness="0"
@@ -63,9 +67,14 @@
                  FontSize="20" Foreground="#F5F5F5"
                  materialDesign:HintAssist.Hint="password"
                  FontWeight="DemiBold"/>
+        <Image Source="/img/icon_password.png" Height="20"
+               Grid.Row="3" Grid.Column="1"
+               HorizontalAlignment="Left" VerticalAlignment="Center"
+               Margin="22 0 0 0"/>
+        <!--Кнопка авторизации-->
         <Border Grid.Row="4" Grid.Column="1"
                 Background="#788E78" Height="50"
-                CornerRadius="11.5" Margin="10 0 10 0"/>
+                CornerRadius="12" Margin="10 0 10 0"/>
         <Button x:Name="loginBtn" 
                 Grid.Row="4" Grid.Column="1"
                 Height="50" Margin="10 0 10 0"
@@ -75,9 +84,6 @@
                 Content="log in" Background="Transparent"
                 Foreground="#F5F5F5" FontWeight="DemiBold" 
                 Click="loginBtn_Click"/>
-        <Image Source="/img/icon_password.png" Height="20"
-               Grid.Row="3" Grid.Column="1"
-               HorizontalAlignment="Left" VerticalAlignment="Center"
-               Margin="22 0 0 0"/>
+        
     </Grid>
 </Page>

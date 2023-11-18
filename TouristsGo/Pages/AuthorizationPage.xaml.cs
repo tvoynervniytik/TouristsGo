@@ -25,7 +25,7 @@ namespace TouristsGo.Pages
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void loginBtn_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Pages.TestPage());
         }

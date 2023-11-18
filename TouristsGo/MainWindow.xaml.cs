@@ -23,7 +23,7 @@ namespace TouristsGo
         public MainWindow()
         {
             InitializeComponent();
-            navFr.NavigationService.Navigate(new Pages.Pagerpage());
+            navFr.NavigationService.Navigate(new Pages.AuthorizationPage());
         }
     }
 }

@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:TouristsGo.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
@@ -26,53 +27,38 @@
             <ImageBrush ImageSource="/img/Rectangle.png"/>
         </Grid.Background>
         <Border Grid.Row="1" Grid.Column="1"
-                   Grid.RowSpan="4" Background="#C0D6C0"
+                Grid.RowSpan="4" Background="#C0D6C0"
                 CornerRadius="20"
-                   Opacity="0.5">
-
+                Opacity="0.5">
         </Border>
-        <!--<TextBlock Grid.Row="2" Grid.Column="1"
-                   FontSize="23" Foreground="#F5F5F5"
-                   Margin="7 0 0 0" VerticalAlignment="Bottom"
-                   FontWeight="DemiBold">
-            login
-        </TextBlock>-->
-        <!--<TextBlock Grid.Row="4" Grid.Column="1"
-                   FontSize="23" Foreground="#F5F5F5"
-                   Margin="7 0 0 0" VerticalAlignment="Bottom"
-                   FontWeight="DemiBold">
-            password
-        </TextBlock>-->
         <TextBlock Grid.Row="1" Grid.Column="1"
                  FontSize="34" Foreground="#F5F5F5"
-                   VerticalAlignment="Center"
+                 VerticalAlignment="Center"
                  Padding="12 0 0 0" FontWeight="Bold" Margin="10 0 10 0">
             Authorization
         </TextBlock>
-        <TextBox Grid.Row="2" Grid.Column="1"
-                 Height="30" Background="#C0D6C0"
-                 Text="login" FontSize="20" Foreground="#F5F5F5"
-                 Padding="12 0 0 0" FontWeight="DemiBold" Margin="10 0 10 0"
-                 BorderThickness="0">
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="20"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
+
+      
+        <Image Source="/img/icon_login.png" Height="20"
+               Grid.Row="2" Grid.Column="1"
+               HorizontalAlignment="Left" VerticalAlignment="Center"
+               Margin="18 0 0 0"/>
         <TextBox Grid.Row="3"
-                 Height="30" Background="#C0D6C0"
-                 BorderThickness="0"
-                 Margin="10 0 10 0"
-                 Grid.Column="1" Padding="12 0 0 0"
-                 Text="password" FontSize="20" Foreground="#F5F5F5"
-                 FontWeight="DemiBold">
+                     Height="30" Background="#C0D6C0"
+                     BorderThickness="0"
+                     Margin="10 0 10 0"
+                     Grid.Column="1" Padding="35 0 0 0"
+                     FontSize="20" Foreground="#F5F5F5"
+                     Text ="password"
+                     FontWeight="DemiBold">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="20"/>
+                    <Setter Property="CornerRadius" Value="11"/>
                 </Style>
             </TextBox.Resources>
+            
         </TextBox>
+        
         <Button Grid.Row="4" Height="40"
                 Grid.Column="1" BorderThickness="0"
                 VerticalAlignment="Center"
@@ -87,5 +73,10 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <Image Source="/img/icon_password.png" Height="20"
+               Grid.Row="3" Grid.Column="1"
+               HorizontalAlignment="Left" VerticalAlignment="Center"
+               Margin="22 0 0 0"/>
+        
     </Grid>
 </Page>

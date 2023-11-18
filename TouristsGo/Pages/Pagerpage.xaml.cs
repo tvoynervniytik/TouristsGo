@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TouristsGo
+namespace TouristsGo.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Pagerpage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Pagerpage : Page
     {
-        public MainWindow()
+        public Pagerpage()
         {
             InitializeComponent();
-            navFr.NavigationService.Navigate(new Pages.Pagerpage());
         }
     }
 }

@@ -29,6 +29,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="/img/Rectangle.png"/>
@@ -97,5 +98,23 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <Button Height="50" Width="50"
+        Content="+"
+                Grid.Row="7" Grid.Column="1"
+                Grid.RowSpan="2"
+        FontSize="25" FontWeight="Bold"
+        Foreground="#788E78" Background="#F5F5F5"
+        x:Name="addBtn" BorderThickness="0" Click="addBtn_Click"/>
+        <Button Height="50" Width="50"
+                Grid.Row="7" Grid.Column="2"
+                Grid.RowSpan="2"
+                Content="✕"
+                Background="#F5F5F5"
+                BorderBrush="#8b4513"
+                BorderThickness="0"
+                HorizontalAlignment="Center"
+                FontSize="15" FontWeight="Bold"
+                Foreground="PaleVioletRed"
+                x:Name="delBtn" Click="delBtn_Click"/>
     </Grid>
 </Page>

@@ -36,5 +36,15 @@ namespace TouristsGo.Pages
         {
             NavigationService.Navigate(new AuthorizationPage());
         }
+
+        private void addBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void delBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

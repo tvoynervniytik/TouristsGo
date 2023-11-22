@@ -37,9 +37,10 @@
             <ImageBrush ImageSource="/img/Rectangle.png"/>
         </Grid.Background>
         <Image Source="/img/backbtn.png" 
-Height="23" 
-HorizontalAlignment="Left"
-Margin="20 0 0 0"/>
+       Height="23" 
+               Grid.ColumnSpan="2"
+       HorizontalAlignment="Left"
+       Margin="20 0 0 0"/>
         <Button x:Name="BackBtn"
  Height="30" Width="100"
  HorizontalAlignment="Left"

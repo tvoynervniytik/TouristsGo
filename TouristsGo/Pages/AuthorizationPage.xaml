@@ -45,7 +45,7 @@
                 CornerRadius="11.5" Margin="10 0 10 0"
                 Height="30"/>
         <TextBox Grid.Row="2" Grid.Column="1"
-                 Height="30"
+                 Height="30" x:Name="loginTb"
                  BorderThickness="0"
                  Margin="10 0 10 0" Padding="38 0 0 0"
                  FontSize="20" Foreground="#F5F5F5" FontWeight="DemiBold"
@@ -59,8 +59,8 @@
                 Background="#C0D6C0"
                 CornerRadius="11.5" Margin="10 0 10 0"
                 Height="30"/>
-        <TextBox Grid.Row="3"
-                 Height="30"
+        <PasswordBox Grid.Row="3"
+                 Height="30" x:Name="passwordTb"
                  BorderThickness="0"
                  Margin="10 0 10 0"
                  Grid.Column="1" Padding="35 0 0 0"

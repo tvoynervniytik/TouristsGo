@@ -37,7 +37,7 @@
                  FontSize="34" Foreground="#F5F5F5"
                  VerticalAlignment="Center"
                  Padding="12 0 0 0" FontWeight="Bold" Margin="10 0 10 0">
-            Authorization
+            authorization
         </TextBlock>
         <!--Поле логина-->
         <Border Grid.Row="2" Grid.Column="1"
@@ -83,7 +83,10 @@
                 FontSize="27" 
                 Content="log in" Background="Transparent"
                 Foreground="#F5F5F5" FontWeight="DemiBold" 
-                Click="loginBtn_Click"/>
-        
+                Click="loginBtn_Click"
+                Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                ToolTip="Resource name: MaterialDesignRaisedAccentButton"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                materialDesign:RippleAssist.Feedback="#C0D6C0"/>
     </Grid>
 </Page>

@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace TouristsGo.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для TestPage.xaml
+    /// Логика взаимодействия для AdminHomePage.xaml
     /// </summary>
-    public partial class TestPage : Page
+    public partial class AdminHomePage : Page
     {
-        public TestPage()
+        public AdminHomePage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
         }
     }
 }

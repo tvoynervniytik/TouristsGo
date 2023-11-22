@@ -29,5 +29,10 @@ namespace TouristsGo.Pages
         {
             NavigationService.Navigate(new Pages.TestPage());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.TestPage());
+        }
     }
 }

@@ -36,6 +36,7 @@ namespace TouristsGo.DB
         public virtual DbSet<Post> Post { get; set; }
         public virtual DbSet<Promocode> Promocode { get; set; }
         public virtual DbSet<Registration> Registration { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Tours> Tours { get; set; }
         public virtual DbSet<TypeTour> TypeTour { get; set; }
     }

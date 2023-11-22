@@ -17,6 +17,7 @@ namespace TouristsGo.DB
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public City()
         {
+            this.Hotel = new HashSet<Hotel>();
             this.Tours = new HashSet<Tours>();
         }
     
@@ -25,6 +26,8 @@ namespace TouristsGo.DB
         public Nullable<int> IdCountry { get; set; }
     
         public virtual Country Country { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Hotel> Hotel { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tours> Tours { get; set; }
     }

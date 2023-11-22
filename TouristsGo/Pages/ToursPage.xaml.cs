@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TouristsGo.DB;
 
 namespace TouristsGo.Pages
 {
@@ -20,9 +21,38 @@ namespace TouristsGo.Pages
     /// </summary>
     public partial class ToursPage : Page
     {
+        public static List<Tours> tours {  get; set; }
+        public static List<Nutrition> nutritions {  get; set; }
+        public static List<City> cities {  get; set; }
+        public static List<Country> countries {  get; set; }
+        public static List<Hotel> hotels {  get; set; }
+        public static List<TypeTour> types {  get; set; }
         public ToursPage()
         {
             InitializeComponent();
+            tours = new List<Tours>(DBConnection.TouristsGo.Tours.ToList());
+            nutritions = new List<Nutrition>(DBConnection.TouristsGo.Nutrition.ToList());
+            cities = new List<City>(DBConnection.TouristsGo.City.ToList());
+            countries = new List<Country>(DBConnection.TouristsGo.Country.ToList());
+            hotels = new List<Hotel>(DBConnection.TouristsGo.Hotel.ToList());
+            types = new List<TypeTour>(DBConnection.TouristsGo.TypeTour.ToList());
+
+            this.DataContext = this;
+        }
+
+        private void BackBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+        private void addBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void delBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

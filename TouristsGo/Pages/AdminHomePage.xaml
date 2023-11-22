@@ -105,5 +105,26 @@
                    FontWeight="DemiBold" Background="Transparent"
                    FontSize="22" Foreground="#F5F5F5"
                    VerticalAlignment="Top"/>
+        <!--<Image Source="/img/Rectangle.png"
+               Grid.Row="6" Grid.RowSpan="2"
+               Grid.Column="2" Height="50" Width="200"
+               Stretch="Fill" Grid.ColumnSpan="2"
+               VerticalAlignment="Center" Opacity="0.7"
+               HorizontalAlignment="Center"/>-->
+        <!--<TextBlock Text="promocodes"
+                   FontWeight="DemiBold"
+                   FontSize="22" Foreground="#F5F5F5"
+                   Grid.Row="6" Grid.RowSpan="2"
+                   Grid.Column="2" Grid.ColumnSpan="2"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>-->
+        <Button Background="Transparent" 
+                Content="promocodes" Height="40"
+                FontWeight="Bold" BorderThickness="0"
+                FontSize="22" Foreground="#F5F5F5"
+                Grid.Row="6" Grid.RowSpan="2"
+                Grid.Column="2" Grid.ColumnSpan="2"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"/>
     </Grid>
 </Page>

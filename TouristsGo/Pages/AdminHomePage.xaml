@@ -22,12 +22,14 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="/img/adminhome.png"/>
         </Grid.Background>
         <Image Source="/img/backbtn.png" 
-               Height="30" 
+               Height="23" 
                HorizontalAlignment="Left"
                Margin="20 0 0 0"/>
         <Button x:Name="BackBtn"
@@ -35,58 +37,73 @@
                 HorizontalAlignment="Left"
                 Margin="20 0 0 0" BorderThickness="0"
                 Background="Transparent" Click="BackBtn_Click"/>
-        <TextBlock Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"
-                   Text="Choosing an action" FontSize="47" Foreground="#F5F5F5"
+        <TextBlock Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2"
+                   Text="choosing an action" FontSize="45" Foreground="#F5F5F5"
                    FontWeight="ExtraBold"
                    Margin="20 0 0 0"/>
         
         
         <TextBlock Text="tours"
-                   Grid.Column="0" Grid.Row="2"
+                   Grid.Column="0" Grid.Row="3"
                    Grid.RowSpan="2"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontSize="30" Foreground="#F5F5F5"
+                   FontSize="27" Foreground="#F5F5F5"
                    FontWeight="DemiBold"
                    Margin="10 0 0 10"/>
-        <Button Grid.Column="0" Grid.Row="2"
+        <Button Grid.Column="0" Grid.Row="3"
                 Grid.RowSpan="2" x:Name="toursBtn"
                 Background="Transparent" BorderThickness="0" Click="toursBtn_Click"/>
         <TextBlock Text="clients"
-                   Grid.Column="1" Grid.Row="2"
+                   Grid.Column="1" Grid.Row="3"
                    Grid.RowSpan="2"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontSize="30" Foreground="#F5F5F5"
+                   FontSize="27" Foreground="#F5F5F5"
                    FontWeight="DemiBold"
                    Margin="5 0 0 10"/>
-        <Button Grid.Column="1" Grid.Row="2"
+        <Button Grid.Column="1" Grid.Row="3"
         Grid.RowSpan="2" x:Name="clientsBtn"
         Background="Transparent" BorderThickness="0" Click="clientsBtn_Click"/>
 
         <TextBlock Text="hotels"
-                   Grid.Column="2" Grid.Row="2"
+                   Grid.Column="2" Grid.Row="3"
                    Grid.RowSpan="2"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontSize="30" Foreground="#F5F5F5"
+                   FontSize="27" Foreground="#F5F5F5"
                    FontWeight="DemiBold"
                    Margin="0 0 8 10"/>
-        <Button Grid.Column="2" Grid.Row="2"
+        <Button Grid.Column="2" Grid.Row="3"
         Grid.RowSpan="2" x:Name="hotelsBtn"
         Background="Transparent" BorderThickness="0" Click="hotelsBtn_Click"/>
 
         <TextBlock Text="countries"
-                   Grid.Column="3" Grid.Row="2"
+                   Grid.Column="3" Grid.Row="3"
                    Grid.RowSpan="2"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontSize="30" Foreground="#F5F5F5"
+                   FontSize="27" Foreground="#F5F5F5"
                    FontWeight="DemiBold"
                    Margin="0 0 15 10"/>
-        <Button Grid.Column="3" Grid.Row="2"
+        <Button Grid.Column="3" Grid.Row="3"
         Grid.RowSpan="2" x:Name="countriesBtn"
         Background="Transparent" BorderThickness="0" Click="countriesBtn_Click"/>
-        
+
+        <Image Grid.Column="0" Grid.Row="6" Grid.RowSpan="2"
+               Width="60" Height="60" HorizontalAlignment="Left"
+               VerticalAlignment="Center"
+               Margin="10 10 0 10" Stretch="Fill"
+               Source="/img/rectangle.png"/>
+        <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2"
+                   Margin="75 0 0 0" Text="administrator"
+                    FontSize="20" Foreground="#F5F5F5"
+                   FontStyle="Italic" Background="Transparent"
+                   VerticalAlignment="Bottom"/>
+        <TextBlock Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2"
+                   Margin="75 0 0 0" Text="Familiya I. O."
+                   FontWeight="DemiBold" Background="Transparent"
+                   FontSize="22" Foreground="#F5F5F5"
+                   VerticalAlignment="Top"/>
     </Grid>
 </Page>

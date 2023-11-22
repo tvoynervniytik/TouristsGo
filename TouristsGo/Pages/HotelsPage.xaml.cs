@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace TouristsGo.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AuthorizationPage.xaml
+    /// Логика взаимодействия для HotelsPage.xaml
     /// </summary>
-    public partial class AuthorizationPage : Page
+    public partial class HotelsPage : Page
     {
-        public AuthorizationPage()
+        public HotelsPage()
         {
             InitializeComponent();
-        }
-
-        private void loginBtn_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new AdminHomePage());
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new TestPage());
         }
     }
 }

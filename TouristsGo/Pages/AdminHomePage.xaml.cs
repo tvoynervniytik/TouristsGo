@@ -32,22 +32,22 @@ namespace TouristsGo.Pages
 
         private void toursBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new ToursPage());
         }
 
         private void clientsBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new ClientsPage());
         }
 
         private void hotelsBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new HotelsPage());
         }
 
         private void countriesBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new CouintriesPage());
         }
     }
 }

@@ -38,7 +38,7 @@
                 Margin="20 0 0 0" BorderThickness="0"
                 Background="Transparent" Click="BackBtn_Click"/>
         <TextBlock Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="2"
-                   Text="choosing an action" FontSize="45" Foreground="#F5F5F5"
+                   Text="choosing an action" FontSize="42" Foreground="#F5F5F5"
                    FontWeight="ExtraBold"
                    Margin="20 0 0 0"/>
         
@@ -48,7 +48,7 @@
                    Grid.RowSpan="2"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontSize="27" Foreground="#F5F5F5"
+                   FontSize="25" Foreground="#F5F5F5"
                    FontWeight="DemiBold"
                    Margin="10 0 0 10"/>
         <Button Grid.Column="0" Grid.Row="3"
@@ -59,7 +59,7 @@
                    Grid.RowSpan="2"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontSize="27" Foreground="#F5F5F5"
+                   FontSize="25" Foreground="#F5F5F5"
                    FontWeight="DemiBold"
                    Margin="5 0 0 10"/>
         <Button Grid.Column="1" Grid.Row="3"
@@ -71,7 +71,7 @@
                    Grid.RowSpan="2"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontSize="27" Foreground="#F5F5F5"
+                   FontSize="25" Foreground="#F5F5F5"
                    FontWeight="DemiBold"
                    Margin="0 0 8 10"/>
         <Button Grid.Column="2" Grid.Row="3"
@@ -83,7 +83,7 @@
                    Grid.RowSpan="2"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontSize="27" Foreground="#F5F5F5"
+                   FontSize="25" Foreground="#F5F5F5"
                    FontWeight="DemiBold"
                    Margin="0 0 15 10"/>
         <Button Grid.Column="3" Grid.Row="3"
@@ -97,13 +97,13 @@
                Source="/img/rectangle.png"/>
         <TextBlock Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2"
                    Margin="75 0 0 0" Text="administrator"
-                    FontSize="20" Foreground="#F5F5F5"
+                    FontSize="17" Foreground="#F5F5F5"
                    FontStyle="Italic" Background="Transparent"
                    VerticalAlignment="Bottom"/>
         <TextBlock Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2"
                    Margin="75 0 0 0" Text="Familiya I. O."
                    FontWeight="DemiBold" Background="Transparent"
-                   FontSize="22" Foreground="#F5F5F5"
+                   FontSize="19" Foreground="#F5F5F5"
                    VerticalAlignment="Top"/>
         <!--<Image Source="/img/Rectangle.png"
                Grid.Row="6" Grid.RowSpan="2"

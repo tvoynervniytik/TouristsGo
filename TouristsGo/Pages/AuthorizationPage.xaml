@@ -88,5 +88,8 @@
                 ToolTip="Resource name: MaterialDesignRaisedAccentButton"
                 IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                 materialDesign:RippleAssist.Feedback="#C0D6C0"/>
+
+        <Button Content="TestPage" Click="Button_Click"/>
+
     </Grid>
 </Page>

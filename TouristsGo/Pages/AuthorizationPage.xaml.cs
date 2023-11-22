@@ -27,7 +27,7 @@ namespace TouristsGo.Pages
 
         private void loginBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Pages.TestPage());
+            NavigationService.Navigate(new Pages.AdminHomePage());
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

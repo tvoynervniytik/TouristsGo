@@ -24,5 +24,30 @@ namespace TouristsGo.Pages
         {
             InitializeComponent();
         }
+
+        private void BackBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AuthorizationPage());
+        }
+
+        private void toursBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void clientsBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void hotelsBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void countriesBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
